@@ -17,29 +17,29 @@ const PrivacyPolicyPage = lazy(() => import('../pages/PrivacyPolicyPage'))
 const TermsPage = lazy(() => import('../pages/TermsPage'))
 
 const withSuspense = (Element) => (
-  <Suspense fallback={<Loading />}>
-    <Element />
-  </Suspense>
+    <Suspense fallback={<Loading />}>
+        <Element />
+    </Suspense>
 )
 
 export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      { index: true, element: withSuspense(HomePage) },
-      { path: 'about', element: withSuspense(AboutPage) },
-      { path: 'programs', element: withSuspense(ProgramsPage) },
-      { path: 'roadmap', element: withSuspense(RoadmapPage) },
-      { path: 'projects', element: withSuspense(ProjectsPage) },
-      { path: 'testimonials', element: withSuspense(TestimonialsPage) },
-      { path: 'colleges', element: withSuspense(CollegesPage) },
-      { path: 'gallery', element: withSuspense(GalleryPage) },
-      { path: 'faq', element: withSuspense(FaqPage) },
-      { path: 'contact', element: withSuspense(ContactPage) },
-      { path: 'privacy-policy', element: withSuspense(PrivacyPolicyPage) },
-      { path: 'terms', element: withSuspense(TermsPage) },
-      { path: '*', element: <Navigate to="/" replace /> },
-    ],
-  },
+    {
+        path: '/',
+        element: <MainLayout />,
+        children: [
+            { index: true, element: withSuspense(HomePage) },
+            { path: 'about', element: withSuspense(AboutPage) },
+            { path: 'programs', element: withSuspense(ProgramsPage) },
+            { path: 'roadmap', element: withSuspense(RoadmapPage) },
+            { path: 'projects', element: withSuspense(ProjectsPage) },
+            { path: 'testimonials', element: withSuspense(TestimonialsPage) },
+            { path: 'colleges', element: withSuspense(CollegesPage) },
+            { path: 'gallery', element: withSuspense(GalleryPage) },
+            { path: 'faq', element: withSuspense(FaqPage) },
+            { path: 'contact', element: withSuspense(ContactPage) },
+            { path: 'privacy-policy', element: withSuspense(PrivacyPolicyPage) },
+            { path: 'terms', element: withSuspense(TermsPage) },
+            { path: '*', element: <Navigate to="/" replace /> },
+        ],
+    },
 ])
