@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import { Container } from '../ui/Container'
 import { NAV_ITEMS } from '../../constants/navigation'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/godix.png'
 
 export function Navbar() {
     return (
@@ -9,7 +9,6 @@ export function Navbar() {
             <Container className="flex items-center justify-between py-4">
                 <Link to="/" className="flex items-center gap-3">
                     <img src={logo} alt="GODIX logo" className="h-10 w-auto" />
-                    <span className="text-lg font-semibold tracking-tight text-slate-950">GODIX</span>
                 </Link>
                 <nav className="hidden items-center gap-6 md:flex">
                     {NAV_ITEMS.map((item) => (

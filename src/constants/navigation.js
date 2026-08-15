@@ -2,12 +2,8 @@
 export const NAV_ITEMS = [
     { label: 'About', to: '/about' },
     { label: 'Programs', to: '/programs' },
-    { label: 'Roadmap', to: '/roadmap' },
     { label: 'Projects', to: '/projects' },
-    { label: 'Testimonials', to: '/testimonials' },
-    { label: 'Colleges', to: '/colleges' },
-    { label: 'Gallery', to: '/gallery' },
-    { label: 'FAQ', to: '/faq' },
+    { label: 'Career Development', to: '/career-development' },
     { label: 'Contact', to: '/contact' },
 ]
 

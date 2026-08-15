@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
             { index: true, element: withSuspense(HomePage) },
             { path: 'about', element: withSuspense(AboutPage) },
             { path: 'programs', element: withSuspense(ProgramsPage) },
-            { path: 'roadmap', element: withSuspense(RoadmapPage) },
+            { path: 'career-development', element: withSuspense(RoadmapPage) },
             { path: 'projects', element: withSuspense(ProjectsPage) },
             { path: 'testimonials', element: withSuspense(TestimonialsPage) },
             { path: 'colleges', element: withSuspense(CollegesPage) },

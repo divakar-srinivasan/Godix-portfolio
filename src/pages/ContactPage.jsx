@@ -1,25 +1,39 @@
 import { Container } from '../components/ui/Container'
 import { PageHeader } from '../components/ui/PageHeader'
-import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 
 export default function ContactPage() {
     return (
         <div>
-            <PageHeader eyebrow="Contact" title="Start a conversation with GODIX" description="For partnerships, admissions, and collaborations, we are ready to connect." />
+            <PageHeader eyebrow="Contact" title="Start a conversation with GODIX" description="Reach out for program exploration, career guidance, technical discussions, or any questions about our developer community." />
             <section className="py-20">
                 <Container className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
                     <Card>
-                        <h2 className="text-2xl font-semibold text-slate-950">Let’s build the next step together</h2>
-                        <p className="mt-3 text-slate-600">Reach out if you want to explore a learning journey, partnership, or campus collaboration.</p>
+                        <h2 className="text-2xl font-semibold text-slate-950">Connect with us</h2>
+                        <p className="mt-4 text-slate-600">We usually respond within 24–48 hours.</p>
+                        <div className="mt-8 space-y-4">
+                            <div>
+                                <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Email</p>
+                                <p className="mt-2 text-slate-600"><a href="mailto:info@godix.in" className="text-sky-600 hover:text-sky-700">info@godix.in</a></p>
+                            </div>
+                            <div>
+                                <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Website</p>
+                                <p className="mt-2 text-slate-600">www.godix.in</p>
+                            </div>
+                            <div>
+                                <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">LinkedIn</p>
+                                <p className="mt-2 text-slate-600"><a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noreferrer" className="text-sky-600 hover:text-sky-700">linkedin.com/company/godix</a></p>
+                            </div>
+                        </div>
                     </Card>
                     <Card>
-                        <form className="space-y-4">
-                            <input className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none ring-0" placeholder="Name" />
-                            <input className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none ring-0" placeholder="Email" />
-                            <textarea className="min-h-32 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none ring-0" placeholder="Message" />
-                            <Button type="button" variant="primary">Send message</Button>
-                        </form>
+                        <h2 className="text-2xl font-semibold text-slate-950">Get in touch</h2>
+                        <p className="mt-3 text-slate-600">We're here to discuss program exploration, career guidance, or any questions about GODIX.</p>
+                        <div className="mt-6 space-y-3 rounded-2xl bg-sky-50 p-4">
+                            <p className="text-sm font-semibold text-sky-900">Preferred contact method</p>
+                            <p className="text-sm text-sky-800">Email us directly at <a href="mailto:info@godix.in" className="font-medium text-sky-700 hover:text-sky-800">info@godix.in</a></p>
+                            <p className="text-sm text-sky-800">Or connect with us on <a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noreferrer" className="font-medium text-sky-700 hover:text-sky-800">LinkedIn</a></p>
+                        </div>
                     </Card>
                 </Container>
             </section>
