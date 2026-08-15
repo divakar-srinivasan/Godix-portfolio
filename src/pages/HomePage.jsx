@@ -33,7 +33,15 @@ export default function HomePage() {
                     </div>
 
                     <div>
-                        <img src={sampleImage} alt="GODIX learning community" className="w-full rounded-3xl border border-slate-200 object-cover shadow-sm" />
+                        <img
+                            src={sampleImage}
+                            alt="GODIX learning community"
+                            width="1920"
+                            height="1080"
+                            decoding="async"
+                            fetchPriority="high"
+                            className="w-full rounded-3xl border border-slate-200 object-cover shadow-sm"
+                        />
                     </div>
                 </Container>
             </section>

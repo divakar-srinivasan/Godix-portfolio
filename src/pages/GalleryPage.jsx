@@ -2,7 +2,7 @@ import { Container } from '../components/ui/Container'
 import { PageHeader } from '../components/ui/PageHeader'
 import { Card } from '../components/ui/Card'
 import { galleryItems } from '../data/placeholderData'
-import sampleImage from '../assets/sample-image.jpg'
+import sampleImage from '../assets/sample.jpg'
 
 export default function GalleryPage() {
     return (
@@ -12,7 +12,15 @@ export default function GalleryPage() {
                 <Container className="grid gap-6 lg:grid-cols-2">
                     {galleryItems.map((item) => (
                         <Card key={item.title}>
-                            <img src={sampleImage} alt={item.title} className="h-48 w-full rounded-2xl object-cover" />
+                            <img
+                                src={sampleImage}
+                                alt={item.title}
+                                width="1920"
+                                height="1080"
+                                loading="lazy"
+                                decoding="async"
+                                className="h-48 w-full rounded-2xl object-cover"
+                            />
                             <h2 className="mt-4 text-xl font-semibold text-slate-950">{item.title}</h2>
                             <p className="mt-2 text-slate-600">{item.description}</p>
                         </Card>

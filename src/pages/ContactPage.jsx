@@ -14,7 +14,7 @@ export default function ContactPage() {
                         <div className="mt-8 space-y-4">
                             <div>
                                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Email</p>
-                                <p className="mt-2 text-slate-600"><a href="mailto:info@godix.in" className="text-sky-600 hover:text-sky-700">info@godix.in</a></p>
+                                <p className="mt-2 text-slate-600"><a href="mailto:info@godix.in" className="rounded-sm text-sky-600 hover:text-sky-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2">info@godix.in</a></p>
                             </div>
                             <div>
                                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Website</p>
@@ -22,7 +22,7 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">LinkedIn</p>
-                                <p className="mt-2 text-slate-600"><a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noreferrer" className="text-sky-600 hover:text-sky-700">https://www.linkedin.com/company/godix/</a></p>
+                                <p className="mt-2 text-slate-600"><a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noopener noreferrer" className="rounded-sm text-sky-600 hover:text-sky-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2" aria-label="GODIX LinkedIn page, opens in a new tab">https://www.linkedin.com/company/godix/</a></p>
                             </div>
                         </div>
                     </Card>
@@ -31,8 +31,8 @@ export default function ContactPage() {
                         <p className="mt-3 text-slate-600">We are here to discuss GODIX programs, developer mentorship, project-based learning, and career preparation.</p>
                         <div className="mt-6 space-y-3 rounded-2xl bg-sky-50 p-4">
                             <p className="text-sm font-semibold text-sky-900">Preferred contact method</p>
-                            <p className="text-sm text-sky-800">Email us directly at <a href="mailto:info@godix.in" className="font-medium text-sky-700 hover:text-sky-800">info@godix.in</a></p>
-                            <p className="text-sm text-sky-800">Or connect with us on <a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noreferrer" className="font-medium text-sky-700 hover:text-sky-800">https://www.linkedin.com/company/godix/</a></p>
+                            <p className="text-sm text-sky-800">Email us directly at <a href="mailto:info@godix.in" className="rounded-sm font-medium text-sky-700 hover:text-sky-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2">info@godix.in</a></p>
+                            <p className="text-sm text-sky-800">Or connect with us on <a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noopener noreferrer" className="rounded-sm font-medium text-sky-700 hover:text-sky-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2" aria-label="GODIX LinkedIn page, opens in a new tab">https://www.linkedin.com/company/godix/</a></p>
                         </div>
                     </Card>
                 </Container>

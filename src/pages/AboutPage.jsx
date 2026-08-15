@@ -47,7 +47,15 @@ export default function AboutPage() {
                         </p>
                     </div>
 
-                    <img src={sampleImage} alt="GODIX community learning" className="w-full rounded-3xl border border-slate-200 object-cover shadow-sm" />
+                    <img
+                        src={sampleImage}
+                        alt="GODIX community learning"
+                        width="1920"
+                        height="1080"
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full rounded-3xl border border-slate-200 object-cover shadow-sm"
+                    />
                 </Container>
             </section>
 

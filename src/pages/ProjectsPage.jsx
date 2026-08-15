@@ -150,7 +150,7 @@ export default function ProjectsPage() {
                                     <h3 className="mt-2 text-lg font-semibold text-slate-950">{step.title}</h3>
                                     <p className="mt-3 text-sm leading-6 text-slate-600">{step.description}</p>
                                 </Card>
-                                {index < lifecycle.length - 1 ? <span className="text-2xl text-slate-400">↓</span> : null}
+                                {index < lifecycle.length - 1 ? <span className="text-2xl text-slate-400" aria-hidden="true">↓</span> : null}
                             </div>
                         ))}
                     </div>
@@ -263,7 +263,7 @@ export default function ProjectsPage() {
                                 <Card className="min-w-[140px] text-center">
                                     <p className="text-lg font-semibold text-slate-950">{step}</p>
                                 </Card>
-                                {index < developmentMindset.length - 1 ? <span className="text-2xl text-slate-400">↓</span> : null}
+                                {index < developmentMindset.length - 1 ? <span className="text-2xl text-slate-400" aria-hidden="true">↓</span> : null}
                             </div>
                         ))}
                     </div>

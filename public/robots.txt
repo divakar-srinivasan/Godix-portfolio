@@ -1,0 +1,8 @@
+# robots.txt for GODIX
+# https://www.godix.in
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.godix.in/sitemap.xml

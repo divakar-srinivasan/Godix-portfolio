@@ -214,7 +214,7 @@ export default function RoadmapPage() {
                                 <Card className="min-w-[140px] text-center">
                                     <p className="text-lg font-semibold text-slate-950">{step}</p>
                                 </Card>
-                                {index < growthMindset.length - 1 ? <span className="text-2xl text-slate-400">&darr;</span> : null}
+                                {index < growthMindset.length - 1 ? <span className="text-2xl text-slate-400" aria-hidden="true">&darr;</span> : null}
                             </div>
                         ))}
                     </div>
