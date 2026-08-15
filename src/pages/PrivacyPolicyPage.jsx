@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
                                 <li>• Your professional goals and interests (optional)</li>
                             </ul>
                             <p>
-                                We collect this information only when you voluntarily provide it through our contact form, email, or LinkedIn messages.
+                                We collect this information only when you voluntarily provide it through email or LinkedIn messages.
                             </p>
                         </div>
                     </Card>
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
                                 <li>• Respond to your inquiries within 24–48 hours</li>
                                 <li>• Provide information about GODIX programs and career development resources</li>
                                 <li>• Discuss your learning goals and career interests</li>
-                                <li>• Send updates about relevant programs (only if you opt in)</li>
+                                <li>• Send updates about relevant programs only if you choose to receive them</li>
                             </ul>
                             <p>
                                 We do not sell, trade, or share your information with third parties.
@@ -94,6 +94,11 @@ export default function PrivacyPolicyPage() {
                             <p>
                                 <a href="mailto:info@godix.in" className="font-medium text-sky-600 hover:text-sky-700">
                                     info@godix.in
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noreferrer" className="font-medium text-sky-600 hover:text-sky-700">
+                                    https://www.linkedin.com/company/godix/
                                 </a>
                             </p>
                         </div>

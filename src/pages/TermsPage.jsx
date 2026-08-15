@@ -21,10 +21,10 @@ export default function TermsPage() {
                         <h2 className="text-2xl font-semibold text-slate-950">Educational Content Disclaimer</h2>
                         <div className="mt-6 space-y-4 text-slate-600">
                             <p>
-                                GODIX provides educational content and mentorship for developers. The information on our website is for educational purposes only and is not guaranteed to achieve specific employment outcomes, placements, or salary increases.
+                                GODIX provides developer mentorship, practical development guidance, project-based learning, and career preparation. The information on our website is for educational purposes only and is not guaranteed to achieve specific employment outcomes, placements, or salary increases.
                             </p>
                             <p>
-                                We focus on building practical skills, technical knowledge, and professional habits. Individual results depend on effort, dedication, and real-world application of learned concepts.
+                                We focus on building practical skills, technical growth, communication, and professional habits. Individual results depend on effort, dedication, and application of learned concepts.
                             </p>
                         </div>
                     </Card>
@@ -49,7 +49,7 @@ export default function TermsPage() {
                             </p>
                             <ul className="space-y-2 pl-4">
                                 <li>• Provide accurate and honest information</li>
-                                <li>• Use the platform and resources responsibly</li>
+                                <li>• Use the website and learning resources responsibly</li>
                                 <li>• Respect the intellectual property of others</li>
                                 <li>• Comply with all applicable laws and regulations</li>
                                 <li>• Not engage in harassment, plagiarism, or unethical behavior</li>
@@ -61,7 +61,7 @@ export default function TermsPage() {
                         <h2 className="text-2xl font-semibold text-slate-950">Limitation of Liability</h2>
                         <div className="mt-6 space-y-4 text-slate-600">
                             <p>
-                                GODIX provides educational content and mentorship on an "as is" basis. We do not guarantee specific career outcomes, job placements, salary increases, or employment results. Your success depends on your effort, learning application, and real-world circumstances beyond our control.
+                                GODIX provides developer mentorship and learning resources on an "as is" basis. We do not guarantee specific career outcomes, job placements, salary increases, or employment results. Your growth depends on your effort, learning application, and circumstances beyond our control.
                             </p>
                             <p>
                                 GODIX is not liable for any direct, indirect, incidental, or consequential damages arising from your use of our platform or services.
@@ -96,6 +96,11 @@ export default function TermsPage() {
                             <p>
                                 <a href="mailto:info@godix.in" className="font-medium text-sky-600 hover:text-sky-700">
                                     info@godix.in
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.linkedin.com/company/godix/" target="_blank" rel="noreferrer" className="font-medium text-sky-600 hover:text-sky-700">
+                                    https://www.linkedin.com/company/godix/
                                 </a>
                             </p>
                         </div>

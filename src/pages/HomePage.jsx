@@ -25,11 +25,10 @@ export default function HomePage() {
                             <span className="mt-2 block">Become Industry-Ready.</span>
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-slate-600">
-                            GODIX is an industry-led developer community that helps students develop technical skills through mentorship, practical development, real-world projects, code reviews, and continuous learning.
+                            GODIX is an industry-led developer community that helps students grow through developer mentorship, project-based learning, practical development, code review, and continuous learning.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-3">
                             <Button as={Link} to="/programs" variant="primary">Explore Programs</Button>
-                            <Button as={Link} to="/about" variant="outline">Learn More</Button>
                         </div>
                     </div>
 
@@ -49,18 +48,18 @@ export default function HomePage() {
                     <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
                         <div className="space-y-5 text-slate-600">
                             <p>Traditional learning often focuses on theory.</p>
-                            <p>GODIX focuses on practical development.</p>
+                            <p>GODIX focuses on practical development and project-based learning.</p>
                             <p>
-                                Students learn by building, experimenting, collaborating, reviewing code, and understanding how real software is developed.
+                                Students learn by building, collaborating, receiving code review, and understanding how software development works in practice.
                             </p>
                         </div>
 
                         <Card>
                             <ul className="space-y-3 text-slate-700">
-                                <li>• Practical learning</li>
-                                <li>• Industry mentorship</li>
-                                <li>• Real development</li>
-                                <li>• Career preparation</li>
+                                <li>Practical development</li>
+                                <li>Developer mentorship</li>
+                                <li>Project-based learning</li>
+                                <li>Career preparation</li>
                             </ul>
                         </Card>
                     </div>
@@ -182,7 +181,6 @@ export default function HomePage() {
                         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Start Your Development Journey</h2>
                         <div className="mt-8 flex flex-wrap justify-center gap-3">
                             <Button as={Link} to="/programs" variant="primary">Explore Programs</Button>
-                            <Button as={Link} to="/contact" variant="outline">Contact Us</Button>
                         </div>
                     </Card>
                 </Container>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Container } from '../components/ui/Container'
 import { PageHeader } from '../components/ui/PageHeader'
 import { Button } from '../components/ui/Button'
@@ -8,17 +9,17 @@ const coreValues = [
     'Continuous learning',
     'Collaboration',
     'Practical development',
-    'Technical excellence',
-    'Professional growth',
+    'Technical growth',
+    'Career preparation',
 ]
 
 const learningPhilosophy = ['Learn', 'Build', 'Review', 'Improve', 'Grow']
 
 const industryFocus = [
     'Developer mentorship',
-    'Practical implementation',
-    'Real projects',
-    'Code reviews',
+    'Practical development',
+    'Project-based learning',
+    'Code review',
     'Career preparation',
 ]
 
@@ -28,7 +29,7 @@ export default function AboutPage() {
             <PageHeader
                 eyebrow="About GODIX"
                 title="Developer-led learning for real-world growth."
-                description="GODIX was created to bridge the gap between academic learning and industry expectations."
+                description="GODIX is an industry-led developer community built around mentorship, practical development, and continuous learning."
             />
 
             <section className="py-20">
@@ -36,13 +37,13 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-semibold text-slate-950">Our Story</h2>
                         <p className="mt-5 text-lg leading-8 text-slate-600">
-                            GODIX was created to bridge the gap between academic learning and industry expectations.
+                            GODIX helps learners move from theory to practical development through guided learning, project-based practice, and developer mentorship.
                         </p>
                         <p className="mt-4 text-slate-600">
-                            Many students learn programming through theory but struggle when applying their knowledge to real-world software development.
+                            Many students learn programming concepts but need structured practice to apply those concepts in software development.
                         </p>
                         <p className="mt-4 text-slate-600">
-                            GODIX was built to create a learning environment where students can develop technical skills through practical implementation, mentorship, projects, and continuous improvement.
+                            GODIX creates a learning environment where students develop technical growth through practical implementation, code review, collaboration, and continuous improvement.
                         </p>
                     </div>
 
@@ -54,13 +55,13 @@ export default function AboutPage() {
                 <Container>
                     <h2 className="text-3xl font-semibold text-slate-950">Why We Started GODIX</h2>
                     <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                        We believe that learning should go beyond lectures and tutorials.
+                        We believe learning should go beyond lectures and tutorials.
                     </p>
                     <p className="mt-4 max-w-3xl text-slate-600">
-                        Students should experience how software is designed, developed, reviewed, tested, and improved.
+                        Students should experience how software is planned, developed, reviewed, tested, and improved.
                     </p>
                     <p className="mt-4 max-w-3xl text-slate-600">
-                        Our goal is to create a developer-focused learning ecosystem.
+                        Our goal is to support a developer-focused community where learners build habits that continue beyond a single program.
                     </p>
                 </Container>
             </section>
@@ -70,14 +71,14 @@ export default function AboutPage() {
                     <Card>
                         <h2 className="text-3xl font-semibold text-slate-950">Our Mission</h2>
                         <p className="mt-5 text-slate-600">
-                            To help students develop practical technical skills through industry-led learning and project-based development.
+                            To help students develop practical technical skills through developer mentorship, project-based learning, and code review.
                         </p>
                     </Card>
 
                     <Card>
                         <h2 className="text-3xl font-semibold text-slate-950">Our Vision</h2>
                         <p className="mt-5 text-slate-600">
-                            To build a strong developer community that encourages learning, collaboration, mentorship, and continuous growth.
+                            To build a developer community that encourages collaboration, technical growth, career preparation, and continuous learning.
                         </p>
                     </Card>
                 </Container>
@@ -126,7 +127,7 @@ export default function AboutPage() {
                 <Container>
                     <h2 className="text-3xl font-semibold text-slate-950">Future Goals</h2>
                     <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-600">
-                        Create a sustainable learning community that helps students become confident software developers through practical experience and mentorship.
+                        Keep building a practical learning community where students grow through developer mentorship, project-based learning, and continuous improvement.
                     </p>
                 </Container>
             </section>
@@ -136,8 +137,7 @@ export default function AboutPage() {
                     <Card className="text-center">
                         <h2 className="text-3xl font-semibold text-slate-950">Continue Your Development Journey</h2>
                         <div className="mt-8 flex flex-wrap justify-center gap-3">
-                            <Button to="/programs" variant="primary">Explore Programs</Button>
-                            <Button to="/contact" variant="outline">Contact Us</Button>
+                            <Button as={Link} to="/programs" variant="primary">Explore Programs</Button>
                         </div>
                     </Card>
                 </Container>

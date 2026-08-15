@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Container } from '../components/ui/Container'
 import { PageHeader } from '../components/ui/PageHeader'
 import { Button } from '../components/ui/Button'
@@ -33,35 +34,35 @@ const developmentPaths = [
         overview: 'Build the core foundation for object-oriented development and structured problem solving.',
         topics: ['Java fundamentals', 'OOP', 'Collections', 'Exception handling', 'Multithreading', 'JDBC', 'Maven'],
         focus: 'Practical focus: writing clean, maintainable Java code with strong fundamentals.',
-        outcome: 'Expected outcome: strong logic, better coding discipline, and real backend readiness.',
+        outcome: 'Stronger logic, better coding discipline, and backend readiness.',
     },
     {
         title: 'Backend Development',
         overview: 'Learn how applications manage data, APIs, service logic, and system interactions.',
         topics: ['Spring Framework', 'Spring Boot', 'REST APIs', 'Database integration', 'Authentication', 'Microservices'],
         focus: 'Practical focus: building reliable and scalable server-side systems.',
-        outcome: 'Expected outcome: stronger backend engineering capability and service-oriented thinking.',
+        outcome: 'Stronger backend engineering capability and service-oriented thinking.',
     },
     {
         title: 'Full-Stack Development',
         overview: 'Understand how frontend and backend work together in complete product development.',
         topics: ['HTML', 'CSS', 'JavaScript', 'React', 'API integration', 'Frontend architecture'],
         focus: 'Practical focus: connecting interfaces, logic, and application flow end-to-end.',
-        outcome: 'Expected outcome: better product understanding and full-stack execution confidence.',
+        outcome: 'Better product understanding and full-stack execution confidence.',
     },
     {
         title: 'DevOps and Cloud',
         overview: 'Build familiarity with delivery workflows, automation, deployment, and cloud-based systems.',
         topics: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'CI/CD', 'Cloud fundamentals'],
         focus: 'Practical focus: understanding how software moves from development to deployment.',
-        outcome: 'Expected outcome: stronger delivery awareness and engineering workflow competence.',
+        outcome: 'Stronger delivery awareness and engineering workflow competence.',
     },
     {
         title: 'Data Structures and Algorithms',
         overview: 'Develop analytical discipline, code efficiency, and structured problem-solving skills.',
         topics: ['Arrays', 'Strings', 'Trees', 'Graphs', 'Dynamic programming', 'Problem solving'],
         focus: 'Practical focus: solving coding challenges with cleaner reasoning and better complexity awareness.',
-        outcome: 'Expected outcome: stronger technical decision-making and problem-solving ability.',
+        outcome: 'Stronger technical decision-making and problem-solving ability.',
     },
 ]
 
@@ -76,7 +77,14 @@ const roadmap = [
 
 const workflow = ['Requirement Analysis', 'Development', 'Testing', 'Code Review', 'Deployment', 'Iteration']
 
-const projectExamples = ['Mini Projects', 'Console Applications', 'REST APIs', 'Web Applications', 'Full-Stack Applications', 'Containerized Applications']
+const projectLearningPreview = [
+    'Guided implementation tasks',
+    'Repository-based practice',
+    'Code review checkpoints',
+    'Documentation habits',
+    'Workflow practice',
+    'Project discussions',
+]
 
 const technologies = {
     programming: ['Java'],
@@ -130,7 +138,7 @@ export default function ProgramsPage() {
             <PageHeader
                 eyebrow="Programs"
                 title="Choose Your Development Path"
-                description="Explore practical learning paths designed around real development workflows, project implementation, mentorship, and continuous improvement."
+                description="Explore practical learning paths designed around developer mentorship, project-based learning, code review, and continuous learning."
             />
 
             <section className="py-20">
@@ -138,7 +146,7 @@ export default function ProgramsPage() {
                     <div>
                         <h2 className="text-3xl font-semibold text-slate-950">How Learning Works</h2>
                         <p className="mt-5 text-slate-600">
-                            The GODIX learning model is built around practical development, feedback, and steady growth.
+                            The GODIX learning model is built around practical development, developer mentorship, code review, and steady technical growth.
                         </p>
                     </div>
 
@@ -176,7 +184,7 @@ export default function ProgramsPage() {
                                     </ul>
                                 </div>
                                 <p className="mt-5 text-slate-600"><strong className="text-slate-950">Practical focus:</strong> {path.focus}</p>
-                                <p className="mt-3 text-slate-600"><strong className="text-slate-950">Expected outcome:</strong> {path.outcome}</p>
+                                <p className="mt-3 text-slate-600"><strong className="text-slate-950">Learning outcome:</strong> {path.outcome}</p>
                             </Card>
                         ))}
                     </div>
@@ -211,9 +219,9 @@ export default function ProgramsPage() {
 
             <section className="py-20 bg-white/70">
                 <Container>
-                    <h2 className="text-3xl font-semibold text-slate-950">Projects You'll Build</h2>
+                    <h2 className="text-3xl font-semibold text-slate-950">Project-Based Learning in Programs</h2>
                     <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                        {projectExamples.map((item) => (
+                        {projectLearningPreview.map((item) => (
                             <Card key={item}>
                                 <p className="text-slate-700">{item}</p>
                             </Card>
@@ -272,8 +280,7 @@ export default function ProgramsPage() {
                     <Card className="text-center">
                         <h2 className="text-3xl font-semibold text-slate-950">Start Building Real Software</h2>
                         <div className="mt-8 flex flex-wrap justify-center gap-3">
-                            <Button to="/projects" variant="primary">Explore Projects</Button>
-                            <Button to="/contact" variant="outline">Contact Us</Button>
+                            <Button as={Link} to="/projects" variant="primary">Explore Projects</Button>
                         </div>
                     </Card>
                 </Container>
