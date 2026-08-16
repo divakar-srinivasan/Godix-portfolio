@@ -3,7 +3,7 @@ import { Container } from '../components/ui/Container'
 import { PageHeader } from '../components/ui/PageHeader'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
-import sampleImage from '../assets/sample.jpg'
+import sampleImage from '../assets/sample.png'
 
 const learningStages = [
     {

@@ -2,7 +2,7 @@ import { Container } from '../components/ui/Container'
 import { PageHeader } from '../components/ui/PageHeader'
 import { Card } from '../components/ui/Card'
 import { galleryItems } from '../data/placeholderData'
-import sampleImage from '../assets/sample.jpg'
+import sampleImage from '../assets/sample.png'
 
 export default function GalleryPage() {
     return (
